@@ -1,0 +1,1012 @@
+{
+  "format": "sogni-world@1",
+  "id": "last-stop",
+  "title": "Last Stop for Lost Things",
+  "subtitle": "A station that isn't on the map",
+  "credit": "Made with Sogni",
+  "aspect": {
+    "width": 2688,
+    "height": 1536
+  },
+  "start": "station",
+  "order": [
+    "station",
+    "door",
+    "corridor",
+    "parlour",
+    "wonton",
+    "shroom",
+    "queen",
+    "tweedles",
+    "selves",
+    "static",
+    "offer",
+    "jellies",
+    "ship",
+    "wave",
+    "rift",
+    "watching"
+  ],
+  "music": {
+    "src": "audio/music.mp3",
+    "volume": 1,
+    "underFilms": 0.5,
+    "credit": "Music made with Sogni"
+  },
+  "intro": {
+    "eyebrow": "",
+    "tagline": "Every city has a station that isn't on the map. It only opens for people who've lost something.",
+    "begin": "Go down the stairs"
+  },
+  "places": [
+    {
+      "id": "station",
+      "title": "The Station",
+      "chapter": "Stop one",
+      "caption": "It wasn't there yesterday.",
+      "still": "stills/station.jpg",
+      "loop": {
+        "src": "films/station-loop.mp4",
+        "src720": "films/station-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-station.mp3",
+        "lines": [
+          {
+            "text": "I was looking for my keys. That's the whole reason.",
+            "start": 0.38,
+            "end": 3.47
+          },
+          {
+            "text": "It was a Tuesday, I think, and it was raining the way it does when it can't really be bothered.",
+            "start": 3.92,
+            "end": 9.17
+          },
+          {
+            "text": "There was a white thing sitting outside the stairs. About the size of a loaf of bread. It looked at me like I was late.",
+            "start": 9.7,
+            "end": 16.76
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "creature",
+          "label": "Follow the white thing",
+          "hint": "It's been waiting",
+          "at": [
+            0.34,
+            0.8
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M774 726L781 726L786 731L799 729L811 739L814 751L816 752L816 760L814 767L805 774L804 779L794 776L774 777L766 769L764 753L769 743L775 737L771 732Z"
+          },
+          "to": "door",
+          "next": true,
+          "shortcut": false,
+          "film": {
+            "src": "films/station-creature.mp4",
+            "src720": "films/station-creature-720.mp4",
+            "seconds": 9.417
+          },
+          "rewind": {
+            "src": "films/station-creature-rewind.mp4",
+            "src720": "films/station-creature-rewind-720.mp4",
+            "seconds": 9.417
+          }
+        },
+        {
+          "id": "neon",
+          "label": "Tap the neon planet",
+          "hint": "It flickers when you look at it",
+          "at": [
+            0.66,
+            0.36
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M1035 229L1044 230L1045 234L1049 235L1050 239L1053 239L1055 247L1052 249L1059 248L1060 256L1058 258L1064 258L1066 264L1068 300L1062 312L1066 318L1064 326L1057 329L1053 333L1054 337L1046 341L1041 346L1040 351L1028 359L1015 363L992 361L980 353L977 347L973 347L972 336L967 332L967 324L971 323L971 320L977 319L966 313L970 310L966 308L966 305L970 304L969 297L966 294L970 293L971 289L974 289L972 284L975 284L975 280L971 280L970 283L967 283L967 280L971 278L978 280L981 278L991 279L988 275L983 275L981 271L977 271L977 268L981 267L977 263L991 265L991 260L1003 250L1018 248L1018 250L1022 251L1025 246L1034 244L1035 241L1032 239L1035 239L1036 235L1040 235L1040 232L1035 231Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/station-neon.mp4",
+            "src720": "films/station-neon-720.mp4",
+            "seconds": 7.292
+          }
+        }
+      ]
+    },
+    {
+      "id": "door",
+      "title": "The Door",
+      "chapter": "Stop two",
+      "caption": "Locked from the inside.",
+      "still": "stills/door.jpg",
+      "loop": {
+        "src": "films/door-loop.mp4",
+        "src720": "films/door-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-door.mp3",
+        "lines": [
+          {
+            "text": "I knocked, which felt stupid. Nobody knocks on a door in a tunnel.",
+            "start": 0,
+            "end": 4.79
+          },
+          {
+            "text": "It opened anyway.",
+            "start": 5.11,
+            "end": 6.21
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "doors",
+          "label": "Knock on the door",
+          "hint": "Feels stupid. Do it anyway.",
+          "at": [
+            0.48,
+            0.55
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M706 153L719 156L716 161L720 161L722 165L733 158L737 160L748 159L753 164L779 164L783 162L791 166L798 165L801 171L808 172L808 176L820 177L822 180L830 182L832 186L841 190L841 193L849 202L852 202L849 206L853 208L856 216L863 214L864 221L867 221L869 226L873 227L870 229L874 233L872 237L883 241L885 244L884 249L890 250L893 253L895 261L899 262L900 270L907 276L909 284L916 288L914 292L921 296L919 301L926 303L924 308L927 312L927 320L924 322L928 323L928 329L924 332L926 340L925 342L919 341L918 346L924 354L924 365L928 367L924 370L928 373L926 376L928 380L923 383L927 385L928 393L925 395L928 396L929 404L931 405L931 408L926 410L927 417L925 418L928 422L928 438L932 443L928 446L928 454L925 455L927 462L932 466L930 497L933 503L931 514L934 520L929 525L932 528L932 536L929 542L930 548L925 553L931 559L929 561L931 565L930 572L925 578L931 578L931 580L925 588L924 596L920 598L923 601L920 621L923 624L924 636L922 637L922 645L914 650L918 654L917 661L921 663L918 671L915 674L911 671L903 673L905 669L902 666L906 665L906 661L900 657L896 659L896 662L893 662L893 665L896 665L894 670L899 674L897 694L898 722L901 722L905 716L909 715L908 711L912 711L912 713L920 712L922 716L913 725L919 727L918 735L921 737L917 742L917 746L911 747L908 750L907 746L902 746L908 740L908 735L902 734L900 730L898 731L897 741L900 749L896 752L895 758L891 759L891 762L896 763L894 771L886 767L890 765L890 763L886 762L886 759L890 757L876 757L879 761L876 763L877 767L875 770L880 771L884 768L884 771L880 774L866 775L863 772L859 772L859 767L857 766L863 760L857 756L845 762L843 759L838 759L836 755L832 755L832 759L843 763L842 765L837 765L836 762L833 763L836 767L832 768L831 771L836 772L836 774L830 772L826 775L821 775L820 773L808 774L802 769L802 771L795 772L794 774L786 773L780 776L752 777L738 775L733 777L728 775L727 772L735 774L738 771L743 771L743 768L745 768L745 771L752 771L752 768L745 766L734 767L733 771L732 768L722 766L722 770L717 770L711 776L704 774L698 768L689 771L687 769L675 770L673 766L662 767L661 765L656 765L656 763L662 762L662 760L667 762L672 762L673 760L682 761L677 757L681 755L678 751L683 748L667 747L665 745L645 746L644 744L640 746L619 745L623 748L619 752L628 755L629 760L639 761L644 759L646 762L652 763L654 767L609 767L614 765L612 761L609 761L614 759L613 756L604 759L604 762L607 763L606 765L569 772L554 770L550 765L553 759L559 758L551 752L555 751L555 747L558 746L553 743L553 739L559 734L556 729L560 726L569 728L567 723L574 725L572 714L575 711L571 708L561 709L559 702L565 701L566 704L570 704L575 701L575 698L570 694L560 698L558 695L552 696L550 692L551 690L564 690L569 693L572 689L577 688L571 682L562 683L562 681L570 681L575 676L571 673L571 665L575 663L575 660L570 657L575 652L575 649L570 645L571 641L575 638L570 634L566 634L564 637L559 635L552 636L550 634L551 628L565 626L551 625L549 616L560 613L560 611L558 609L549 609L546 603L547 598L541 600L550 590L547 584L549 574L540 569L544 568L547 570L548 568L545 565L549 564L549 562L540 563L534 560L535 553L539 553L538 548L540 544L544 543L544 538L541 538L540 535L539 526L544 525L544 529L548 529L548 525L545 525L547 515L545 511L547 508L546 501L539 498L538 491L539 483L542 481L541 476L543 475L542 471L546 455L540 448L544 443L541 441L543 437L539 434L544 431L538 428L538 420L532 420L541 413L540 409L542 406L539 403L533 403L532 405L535 408L533 409L533 414L530 415L528 414L528 400L530 391L537 393L538 388L543 383L538 380L539 373L547 370L547 367L544 366L547 362L545 358L550 356L544 351L549 346L548 339L551 334L549 324L554 321L545 315L553 309L564 310L570 308L574 311L575 308L572 308L570 305L564 305L563 307L561 305L551 306L546 301L565 298L565 296L561 295L560 290L576 286L574 282L566 280L570 275L591 277L589 272L592 269L586 266L590 266L592 262L597 261L594 258L595 254L593 251L597 251L605 243L605 239L623 240L619 239L617 234L613 234L610 237L610 233L607 231L609 228L617 225L618 222L622 222L616 216L619 214L619 208L617 205L614 205L614 202L618 202L623 198L629 204L634 204L635 201L641 200L636 197L641 195L641 193L635 190L639 189L642 183L660 177L661 180L652 182L646 187L654 193L661 188L657 185L658 183L668 178L675 180L674 174L681 176L681 172L686 168L683 162L687 162L688 165L700 162L698 158L690 160L690 156L693 154L704 155Z"
+          },
+          "to": "corridor",
+          "next": true,
+          "shortcut": false,
+          "film": {
+            "src": "films/door-doors.mp4",
+            "src720": "films/door-doors-720.mp4",
+            "seconds": 10.125
+          },
+          "rewind": {
+            "src": "films/door-doors-rewind.mp4",
+            "src720": "films/door-doors-rewind-720.mp4",
+            "seconds": 10.125
+          }
+        }
+      ]
+    },
+    {
+      "id": "corridor",
+      "title": "The Corridor",
+      "chapter": "Stop three",
+      "caption": "Everything else comes here.",
+      "still": "stills/corridor.jpg",
+      "loop": {
+        "src": "films/corridor-loop.mp4",
+        "src720": "films/corridor-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-corridor.mp3",
+        "lines": [
+          {
+            "text": "It smelled like a library that had been left in the rain.",
+            "start": 0,
+            "end": 3.39
+          },
+          {
+            "text": "There was a frame on the wall full of keys. None of them were mine. I checked, obviously.",
+            "start": 4,
+            "end": 9.99
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "porthole",
+          "label": "Open the porthole door",
+          "hint": "The pink one",
+          "at": [
+            0.35,
+            0.42
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M502 280L513 280L527 284L527 293L521 295L517 293L512 294L517 297L513 299L513 303L518 305L528 302L530 299L532 300L532 304L535 305L540 315L539 318L535 319L538 319L543 324L541 335L545 339L544 345L547 351L544 354L545 365L543 370L539 371L548 370L545 373L548 377L545 377L542 383L547 388L545 393L548 393L551 398L550 402L546 403L548 407L545 411L553 416L553 426L543 428L543 438L548 445L546 446L547 450L540 455L543 458L542 472L535 470L533 473L535 478L531 480L531 484L522 483L522 486L517 484L498 486L498 484L491 483L490 474L478 460L470 427L466 366L469 312L480 284L486 281L500 283Z"
+          },
+          "to": "parlour",
+          "next": true,
+          "shortcut": false,
+          "film": {
+            "src": "films/corridor-porthole.mp4",
+            "src720": "films/corridor-porthole-720.mp4",
+            "seconds": 10.834
+          },
+          "rewind": {
+            "src": "films/corridor-porthole-rewind.mp4",
+            "src720": "films/corridor-porthole-rewind-720.mp4",
+            "seconds": 10.834
+          }
+        },
+        {
+          "id": "keys",
+          "label": "Take a key from the frame",
+          "hint": "None of them are yours",
+          "at": [
+            0.43,
+            0.56
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M594 466L617 468L621 476L627 476L636 481L643 480L648 483L665 482L672 484L675 481L682 484L695 484L692 479L688 479L686 476L679 477L673 475L674 472L724 475L726 477L724 487L726 487L727 491L724 524L726 525L725 532L727 534L726 540L728 541L724 553L728 556L726 561L728 566L724 575L716 574L719 578L711 577L708 581L697 581L688 587L683 587L681 582L670 588L658 583L646 587L638 599L625 599L621 597L619 599L620 603L617 606L610 606L602 611L594 611L593 605L596 602L595 598L598 597L594 592L601 588L600 580L602 579L601 571L594 570L595 562L601 561L600 557L595 558L594 556L602 554L602 547L597 545L600 540L594 536L594 524L601 528L602 522L600 520L595 522L594 518L601 519L603 517L603 510L594 504L594 500L597 499L595 496L596 489L592 487L592 467Z"
+          },
+          "to": null,
+          "collect": true,
+          "film": {
+            "src": "films/corridor-keys.mp4",
+            "src720": "films/corridor-keys-720.mp4",
+            "seconds": 7.292
+          }
+        }
+      ]
+    },
+    {
+      "id": "parlour",
+      "title": "The Fortune Cat's Parlour",
+      "chapter": "Stop four",
+      "caption": "Luck isn't spent. It's misplaced.",
+      "still": "stills/parlour.jpg",
+      "loop": {
+        "src": "films/parlour-loop.mp4",
+        "src720": "films/parlour-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-parlour.mp3",
+        "lines": [
+          {
+            "text": "The cat wouldn't take my coin. Just kept waving.",
+            "start": 0,
+            "end": 2.64
+          },
+          {
+            "text": "I've thought about that more than I'd like to admit.",
+            "start": 3.17,
+            "end": 5.52
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "screen",
+          "label": "Step behind the folding screen",
+          "hint": "Someone is playing cards back there",
+          "at": [
+            0.61,
+            0.24
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M797 0L1116 0L1117 5L1123 2L1124 10L1122 14L1124 16L1124 24L1121 27L1124 29L1121 31L1122 35L1117 39L1117 43L1118 47L1124 52L1122 56L1123 69L1127 72L1121 74L1121 79L1119 80L1121 85L1117 89L1119 121L1114 123L1114 127L1110 129L1107 135L1089 135L1091 138L1087 141L1089 145L1085 147L1079 146L1074 150L1085 154L1086 168L1086 174L1081 178L1083 182L1078 184L1077 193L1081 201L1086 202L1087 207L1087 210L1084 212L1086 220L1082 223L1081 237L1078 239L1080 243L1077 243L1074 247L1071 257L1062 260L1059 274L1052 272L1056 277L1046 281L1046 283L1050 284L1050 287L1031 303L1034 307L1030 307L1028 310L1021 310L1018 319L971 322L969 320L925 319L922 317L904 317L895 314L885 315L867 312L862 314L837 314L825 309L824 303L826 300L823 297L826 295L828 282L825 280L826 275L822 274L818 277L818 274L825 271L826 238L824 236L827 231L826 227L830 226L831 223L824 218L826 215L822 211L825 210L825 207L823 207L825 202L821 201L821 196L818 192L820 189L818 184L821 183L822 179L825 179L822 177L822 174L825 172L820 171L821 162L819 160L820 151L823 148L821 147L822 141L819 137L812 134L797 132L786 127L782 121L777 121L779 119L778 111L774 109L777 103L775 95L778 92L775 84L778 75L774 72L778 64L775 57L779 53L779 50L775 48L778 44L778 38L774 36L776 30L773 24L773 20L776 17L774 10L777 4L783 4L787 7L791 2L797 2Z"
+          },
+          "to": "wonton",
+          "next": true,
+          "shortcut": false,
+          "film": {
+            "src": "films/parlour-screen.mp4",
+            "src720": "films/parlour-screen-720.mp4",
+            "seconds": 8.709
+          },
+          "rewind": {
+            "src": "films/parlour-screen-rewind.mp4",
+            "src720": "films/parlour-screen-rewind-720.mp4",
+            "seconds": 8.709
+          }
+        },
+        {
+          "id": "cat",
+          "label": "Wave back at the cat",
+          "hint": "It's been waving all night",
+          "at": [
+            0.17,
+            0.8
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M232 510L234 516L244 520L244 527L240 526L237 519L233 524L226 523L220 530L232 532L238 529L243 531L246 537L253 542L257 539L256 534L259 533L259 538L264 540L308 541L307 538L319 537L319 541L323 541L322 544L324 544L324 542L329 542L329 540L325 539L324 535L333 535L331 538L334 539L334 535L339 533L344 540L341 544L343 551L347 551L349 554L360 558L386 578L391 603L395 605L391 613L392 627L395 632L392 636L396 638L396 643L400 643L401 628L394 626L404 627L404 636L411 638L405 640L404 643L410 645L414 640L417 645L415 651L405 653L407 661L409 662L411 655L417 656L417 666L425 665L428 668L425 672L426 674L431 674L433 670L436 670L438 674L443 675L437 678L440 682L437 682L437 685L434 686L432 685L434 682L432 676L428 676L425 683L416 682L414 686L407 688L407 693L411 694L407 694L405 699L398 701L392 699L372 712L361 716L324 718L212 711L203 713L184 709L173 696L168 694L162 681L162 654L168 620L182 592L184 582L191 577L189 559L195 557L194 553L201 554L206 551L211 555L211 547L199 549L200 544L207 545L203 543L205 539L204 534L218 523L220 519L230 515Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/parlour-cat.mp4",
+            "src720": "films/parlour-cat-720.mp4",
+            "seconds": 7.292
+          }
+        }
+      ]
+    },
+    {
+      "id": "wonton",
+      "title": "The Wonton Room",
+      "chapter": "Stop five",
+      "caption": "Double or nothing.",
+      "still": "stills/wonton.jpg",
+      "loop": {
+        "src": "films/wonton-loop.mp4",
+        "src720": "films/wonton-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-wonton.mp3",
+        "lines": [
+          {
+            "text": "Two of them at a little table, playing for something. They said double or nothing.",
+            "start": 0,
+            "end": 5.05
+          },
+          {
+            "text": "I asked double of what. They didn't answer, which, looking back, was the answer.",
+            "start": 5.58,
+            "end": 10.88
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "heart",
+          "label": "Look into the glowing heart",
+          "hint": "Keep your nerve",
+          "at": [
+            0.415,
+            0.63
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M642 523L666 533L675 541L682 555L684 566L681 569L651 575L639 573L626 575L622 572L618 564L615 563L614 556L618 539L629 527Z"
+          },
+          "to": "shroom",
+          "next": true,
+          "shortcut": false,
+          "film": {
+            "src": "films/wonton-heart.mp4",
+            "src720": "films/wonton-heart-720.mp4",
+            "seconds": 10.834
+          },
+          "rewind": {
+            "src": "films/wonton-heart-rewind.mp4",
+            "src720": "films/wonton-heart-rewind-720.mp4",
+            "seconds": 10.834
+          }
+        },
+        {
+          "id": "bet",
+          "label": "Double or nothing",
+          "hint": "What's the worst that could happen",
+          "at": [
+            0.505,
+            0.58
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M786 497L792 497L797 501L798 525L803 539L801 566L794 571L793 578L787 580L784 578L773 578L768 564L757 563L757 559L765 553L765 549L759 546L755 539L759 501L763 498L769 499L773 504L773 514L782 515L782 504Z"
+          },
+          "to": "rift",
+          "next": false,
+          "shortcut": true,
+          "film": {
+            "src": "films/wonton-bet.mp4",
+            "src720": "films/wonton-bet-720.mp4",
+            "seconds": 8.709
+          },
+          "rewind": {
+            "src": "films/wonton-bet-rewind.mp4",
+            "src720": "films/wonton-bet-rewind-720.mp4",
+            "seconds": 8.709
+          }
+        }
+      ]
+    },
+    {
+      "id": "shroom",
+      "title": "The Shroom",
+      "chapter": "Stop six",
+      "caption": "Curiosity grows here when you stop using it.",
+      "still": "stills/shroom.jpg",
+      "loop": {
+        "src": "films/shroom-loop.mp4",
+        "src720": "films/shroom-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-shroom.mp3",
+        "lines": [
+          {
+            "text": "The mushrooms hummed when I asked them things.",
+            "start": 0,
+            "end": 2.55
+          },
+          {
+            "text": "Not words. More like a fridge.",
+            "start": 2.86,
+            "end": 4.77
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "cap",
+          "label": "Ask the big mushroom a question",
+          "hint": "It hums back",
+          "at": [
+            0.44,
+            0.26
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M695 210L718 211L739 223L750 236L755 250L750 263L744 269L739 273L720 278L718 323L706 329L690 328L685 324L683 319L684 277L670 272L659 265L653 257L651 247L654 235L664 223L679 214Z"
+          },
+          "to": "queen",
+          "next": true,
+          "shortcut": false,
+          "film": {
+            "src": "films/shroom-cap.mp4",
+            "src720": "films/shroom-cap-720.mp4",
+            "seconds": 9.417
+          },
+          "rewind": {
+            "src": "films/shroom-cap-rewind.mp4",
+            "src720": "films/shroom-cap-rewind-720.mp4",
+            "seconds": 9.417
+          }
+        },
+        {
+          "id": "redcap",
+          "label": "Listen to the red mushroom",
+          "hint": "It's the only one that answers",
+          "at": [
+            0.71,
+            0.43
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M1122 359L1133 360L1143 364L1156 376L1158 381L1155 392L1144 399L1136 401L1134 404L1139 438L1138 441L1132 444L1116 444L1113 442L1109 415L1110 406L1104 403L1089 401L1082 393L1082 382L1095 367L1105 361Z"
+          },
+          "to": null,
+          "collect": true,
+          "film": {
+            "src": "films/shroom-redcap.mp4",
+            "src720": "films/shroom-redcap-720.mp4",
+            "seconds": 7.292
+          }
+        }
+      ]
+    },
+    {
+      "id": "queen",
+      "title": "The Queen's Board",
+      "chapter": "Stop seven",
+      "caption": "She'd already moved.",
+      "still": "stills/queen.jpg",
+      "loop": {
+        "src": "films/queen-loop.mp4",
+        "src720": "films/queen-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-queen.mp3",
+        "lines": [
+          {
+            "text": "She'd already moved before I sat down.",
+            "start": 0.4,
+            "end": 2.82
+          },
+          {
+            "text": "I used to play chess with my uncle like that. He never waited either.",
+            "start": 3.46,
+            "end": 7.68
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "tile",
+          "label": "Let the Queen move first",
+          "hint": "She will anyway",
+          "at": [
+            0.76,
+            0.38
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M1170 305L1174 311L1171 320L1171 332L1173 335L1171 347L1174 353L1163 358L1163 361L1182 365L1184 374L1182 406L1178 421L1172 426L1165 426L1150 421L1141 412L1138 412L1134 406L1137 397L1138 377L1140 377L1138 373L1141 371L1142 357L1144 352L1148 351L1152 342L1163 334L1165 311L1169 309Z"
+          },
+          "to": "tweedles",
+          "next": true,
+          "shortcut": false,
+          "film": {
+            "src": "films/queen-tile.mp4",
+            "src720": "films/queen-tile-720.mp4",
+            "seconds": 11.542
+          },
+          "rewind": {
+            "src": "films/queen-tile-rewind.mp4",
+            "src720": "films/queen-tile-rewind-720.mp4",
+            "seconds": 11.542
+          }
+        }
+      ]
+    },
+    {
+      "id": "tweedles",
+      "title": "Tweedledee and Tweedledum",
+      "chapter": "Stop eight",
+      "caption": "The ones that didn't happen.",
+      "still": "stills/tweedles.jpg",
+      "loop": {
+        "src": "films/tweedles-loop.mp4",
+        "src720": "films/tweedles-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-tweedles.mp3",
+        "lines": [
+          {
+            "text": "They were arguing about me.",
+            "start": 0.37,
+            "end": 4.35
+          },
+          {
+            "text": "One of them said I'd gone into accounting. The other one laughed for a really long time.",
+            "start": 4.76,
+            "end": 7.2
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "between",
+          "label": "Step between them",
+          "hint": "Don't take sides",
+          "at": [
+            0.5,
+            0.55
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M961 332L964 332L965 336L970 340L980 340L976 338L979 335L985 335L988 341L997 341L998 336L1002 336L1004 339L1018 339L1037 351L1043 350L1078 364L1084 372L1088 373L1100 392L1104 394L1105 400L1109 405L1114 420L1112 426L1117 428L1117 452L1121 449L1130 451L1130 448L1127 448L1122 443L1135 442L1144 437L1164 435L1161 431L1169 430L1171 438L1179 440L1178 444L1183 446L1183 450L1191 454L1197 467L1195 476L1196 492L1192 496L1188 494L1183 495L1189 497L1193 502L1185 507L1185 511L1177 518L1164 519L1162 522L1152 525L1143 524L1135 530L1123 532L1118 537L1111 537L1098 543L1084 545L1077 544L1074 540L1073 543L1068 544L1070 548L1065 549L1029 549L999 545L965 527L962 522L972 519L957 520L953 517L933 490L935 486L918 481L913 477L913 472L910 469L912 455L915 450L923 447L932 447L930 442L937 443L937 440L930 438L928 435L937 425L936 414L925 417L924 408L928 401L933 399L929 394L934 378L934 367L939 362L941 356L956 353L953 350L947 350L947 348L949 348L952 340L959 340L958 336ZM603 336L610 340L616 339L624 343L624 347L627 350L623 351L623 353L628 354L625 357L625 361L634 362L638 365L638 371L645 385L646 399L642 402L642 405L645 406L645 409L648 410L647 414L650 415L648 419L650 423L641 428L644 435L640 439L644 446L659 449L662 452L666 463L664 475L655 482L642 485L642 490L633 498L631 505L623 511L622 517L619 517L612 525L605 528L603 532L582 542L567 544L560 548L512 548L510 546L517 546L518 544L511 542L507 537L501 537L500 539L495 536L488 538L485 536L466 538L454 535L454 531L464 528L462 524L454 528L453 531L450 531L447 528L453 528L454 526L451 524L426 523L426 521L437 519L438 515L443 515L446 518L449 515L453 515L453 513L449 511L444 515L442 511L437 511L437 514L434 515L433 512L422 512L423 507L428 510L442 510L444 506L449 506L449 504L457 506L458 503L455 501L467 499L466 495L469 493L467 481L469 477L465 470L467 470L468 464L461 463L460 456L463 453L464 446L469 441L461 439L461 431L468 432L465 427L469 426L464 423L467 420L464 411L468 408L468 402L475 390L488 377L488 373L491 373L498 365L516 365L508 363L509 360L523 355L537 354L540 349L545 352L548 352L550 347L556 347L557 350L559 348L571 350L578 343L599 342Z"
+          },
+          "to": "selves",
+          "next": true,
+          "shortcut": false,
+          "film": {
+            "src": "films/tweedles-between.mp4",
+            "src720": "films/tweedles-between-720.mp4",
+            "seconds": 10.834
+          },
+          "rewind": {
+            "src": "films/tweedles-between-rewind.mp4",
+            "src720": "films/tweedles-between-rewind-720.mp4",
+            "seconds": 10.834
+          }
+        },
+        {
+          "id": "argue",
+          "label": "Ask which one you became",
+          "hint": "They disagree",
+          "at": [
+            0.31,
+            0.45
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M615 338L625 344L627 350L623 353L628 354L628 357L625 358L624 362L637 367L639 377L643 380L643 386L637 388L635 382L631 381L629 388L631 398L622 405L622 409L633 412L633 414L629 414L628 417L622 419L630 426L619 427L617 424L618 419L610 421L608 423L612 424L612 426L607 428L609 435L622 433L624 438L628 438L628 435L633 432L634 438L630 440L632 444L628 445L625 450L659 450L665 459L666 470L654 482L638 486L640 491L633 497L622 517L617 517L607 530L586 542L561 548L542 550L499 549L462 540L442 532L435 526L407 522L404 519L398 518L387 509L376 486L375 473L377 472L376 468L379 466L384 449L392 437L405 434L407 430L417 430L424 433L425 437L432 440L434 444L455 446L447 449L446 456L449 472L451 473L450 478L454 480L455 493L457 494L460 480L458 449L456 447L460 431L458 422L462 417L466 401L479 381L490 370L507 358L534 352L546 347L559 347L570 350L577 345L586 346Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/tweedles-argue.mp4",
+            "src720": "films/tweedles-argue-720.mp4",
+            "seconds": 7.292
+          }
+        }
+      ]
+    },
+    {
+      "id": "selves",
+      "title": "Hall of Former Selves",
+      "chapter": "Stop nine",
+      "caption": "Most of them I didn't recognise.",
+      "still": "stills/selves.jpg",
+      "loop": {
+        "src": "films/selves-loop.mp4",
+        "src720": "films/selves-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-selves.mp3",
+        "lines": [
+          {
+            "text": "Most of them I didn't recognise.",
+            "start": 0.34,
+            "end": 2.2
+          },
+          {
+            "text": "Then there was one of a kid, nine maybe, hunched over a notebook. Blue Bic. Chewed flat at the end. I used to do that.",
+            "start": 2.8,
+            "end": 11.2
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "orb",
+          "label": "Follow the light",
+          "hint": "Toward the kid in the doorway",
+          "at": [
+            0.28,
+            0.8
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M418 651L454 656L457 659L457 663L462 663L461 667L466 668L466 671L461 671L461 673L465 677L476 681L469 684L477 690L477 694L470 696L478 707L478 710L475 711L478 717L474 723L475 731L471 733L473 737L469 743L456 748L447 758L440 761L433 760L428 762L426 760L411 759L406 756L406 753L397 751L395 748L395 736L385 727L381 715L382 710L379 706L376 706L382 700L375 694L382 688L379 683L379 678L383 676L383 673L380 671L381 665L386 662L392 664L393 656L397 653L411 654Z"
+          },
+          "to": "static",
+          "next": true,
+          "shortcut": false,
+          "film": {
+            "src": "films/selves-orb.mp4",
+            "src720": "films/selves-orb-720.mp4",
+            "seconds": 11.542
+          },
+          "rewind": {
+            "src": "films/selves-orb-rewind.mp4",
+            "src720": "films/selves-orb-rewind-720.mp4",
+            "seconds": 11.542
+          }
+        }
+      ]
+    },
+    {
+      "id": "static",
+      "title": "The Static",
+      "chapter": "Stop ten",
+      "caption": "Where your attention goes.",
+      "still": "stills/static.jpg",
+      "loop": {
+        "src": "films/static-loop.mp4",
+        "src720": "films/static-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-static.mp3",
+        "lines": [
+          {
+            "text": "I took my phone out. I don't know why.",
+            "start": 0,
+            "end": 2.73
+          },
+          {
+            "text": "There was no signal. I kept looking at it anyway.",
+            "start": 3.16,
+            "end": 6.16
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "light",
+          "label": "Walk toward the light",
+          "hint": "Something is waiting in there",
+          "at": [
+            0.48,
+            0.38
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M760 247L767 249L768 253L777 251L777 253L787 255L787 251L793 248L801 250L801 252L809 250L811 254L814 254L811 257L813 259L815 256L822 256L823 259L831 257L828 261L836 259L838 262L842 262L843 265L848 266L843 268L842 271L833 269L836 274L833 274L832 277L838 280L843 280L843 278L852 280L850 275L854 271L862 269L863 271L860 274L869 278L869 280L864 281L864 284L868 285L865 287L865 290L868 291L866 295L874 291L873 287L876 284L880 286L885 286L886 284L895 286L899 284L898 289L902 289L906 296L912 296L914 299L921 296L923 299L927 299L931 303L927 305L927 308L933 309L930 313L933 313L934 317L939 319L948 318L944 322L951 325L960 323L962 326L971 324L971 326L975 327L969 332L966 329L961 329L960 332L964 334L962 337L970 336L971 339L978 342L983 339L1000 342L999 347L1005 352L1004 356L1007 356L1007 362L1011 368L1007 372L1001 369L996 372L988 369L986 373L983 373L986 377L978 376L979 380L973 379L975 384L972 386L976 388L973 391L976 393L973 399L951 402L943 408L937 406L934 408L928 408L927 406L919 408L917 405L899 403L895 400L889 400L889 398L882 399L873 395L855 396L850 394L844 396L833 391L812 390L808 385L803 385L799 381L795 381L793 384L777 391L759 392L756 390L705 387L666 381L646 382L609 372L612 365L615 365L616 360L625 357L624 354L619 354L618 351L622 350L623 347L627 347L625 343L629 340L629 334L633 332L630 327L633 323L637 322L637 315L655 307L650 303L660 298L665 292L670 292L669 288L673 287L674 283L677 283L674 280L675 277L682 275L684 278L691 279L690 276L695 275L704 275L706 277L709 275L718 276L718 274L723 274L729 269L737 268L737 266L745 269L747 265L751 265L753 262L757 263L757 265L753 266L753 268L757 269L753 274L763 272L763 269L768 268L768 266L764 265L763 262L758 262L758 260L778 262L778 259L775 259L774 256L768 256L768 254L759 256L759 253L763 253L763 250L759 250Z"
+          },
+          "to": "offer",
+          "next": true,
+          "shortcut": false,
+          "film": {
+            "src": "films/static-light.mp4",
+            "src720": "films/static-light-720.mp4",
+            "seconds": 10.834
+          },
+          "rewind": {
+            "src": "films/static-light-rewind.mp4",
+            "src720": "films/static-light-rewind-720.mp4",
+            "seconds": 10.834
+          }
+        }
+      ]
+    },
+    {
+      "id": "offer",
+      "title": "The Offer",
+      "chapter": "Stop eleven",
+      "caption": "Two pills. Pick one.",
+      "still": "stills/offer.jpg",
+      "loop": {
+        "src": "films/offer-loop.mp4",
+        "src720": "films/offer-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-offer.mp3",
+        "lines": [
+          {
+            "text": "A hand came out of the static holding two pills. I'm aware of how that sounds.",
+            "start": 0,
+            "end": 5.23
+          },
+          {
+            "text": "One said create. One said observe. I've been observing for about fifteen years.",
+            "start": 5.73,
+            "end": 12.16
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "create",
+          "label": "Take the jellyfish pill",
+          "hint": "Create",
+          "at": [
+            0.44,
+            0.72
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M665 342L681 342L697 349L707 360L713 377L711 393L713 481L711 503L701 521L695 526L680 532L664 531L650 524L637 508L635 497L635 373L646 353Z"
+          },
+          "to": "jellies",
+          "next": true,
+          "shortcut": false,
+          "film": {
+            "src": "films/offer-create.mp4",
+            "src720": "films/offer-create-720.mp4",
+            "seconds": 10.834
+          },
+          "rewind": {
+            "src": "films/offer-create-rewind.mp4",
+            "src720": "films/offer-create-rewind-720.mp4",
+            "seconds": 10.834
+          }
+        },
+        {
+          "id": "observe",
+          "label": "Take the smiley pill",
+          "hint": "Observe",
+          "at": [
+            0.72,
+            0.5
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M856 343L870 344L884 350L893 361L899 376L897 379L899 382L899 432L897 435L899 438L898 459L900 460L898 502L888 520L878 527L864 531L846 528L828 513L823 494L823 464L819 459L821 454L818 451L818 446L823 441L823 406L825 402L822 381L826 364L839 349Z"
+          },
+          "to": "watching",
+          "next": false,
+          "shortcut": true,
+          "film": {
+            "src": "films/offer-observe.mp4",
+            "src720": "films/offer-observe-720.mp4",
+            "seconds": 8
+          },
+          "rewind": {
+            "src": "films/offer-observe-rewind.mp4",
+            "src720": "films/offer-observe-rewind-720.mp4",
+            "seconds": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "jellies",
+      "title": "The Jellyfish",
+      "chapter": "Stop twelve",
+      "caption": "They just went up.",
+      "still": "stills/jellies.jpg",
+      "loop": {
+        "src": "films/jellies-loop.mp4",
+        "src720": "films/jellies-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-jellies.mp3",
+        "lines": [
+          {
+            "text": "The pill tasted like a pencil eraser. Then there were jellyfish.",
+            "start": 0,
+            "end": 4.44
+          },
+          {
+            "text": "They didn't go anywhere in particular. They just went up, so I did too.",
+            "start": 4.99,
+            "end": 9.28
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "jelly",
+          "label": "Follow them up",
+          "hint": "They're going somewhere",
+          "at": [
+            0.62,
+            0.3
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M1019 207L1034 207L1048 212L1049 215L1055 217L1056 221L1065 229L1069 249L1068 259L1058 269L1039 271L1033 282L1024 287L1024 290L1027 290L1027 294L1022 305L1018 304L1017 300L1014 302L1007 301L1007 299L1013 298L1019 292L1022 292L1018 287L1013 287L1012 284L1009 284L1012 289L1005 290L1004 292L1011 295L1007 296L1002 304L1004 306L1011 304L1012 308L999 308L999 310L1011 312L1005 315L1008 318L1005 321L1005 325L1001 331L998 331L996 317L994 317L991 326L983 328L982 308L984 299L988 292L989 281L992 279L994 266L999 259L999 250L988 246L985 241L985 235L1000 214ZM882 239L896 239L898 243L911 242L921 248L919 252L926 251L926 254L933 260L937 281L937 288L931 299L921 302L906 301L905 304L896 305L892 308L890 304L887 304L889 300L885 298L885 295L881 294L883 284L877 285L872 281L858 279L854 275L854 264L859 258L860 253L868 253L869 251L866 251L865 248L872 243L879 246L878 242L881 242ZM950 370L965 370L978 373L995 384L1000 390L1004 402L1005 421L1001 429L987 434L972 433L969 429L961 426L958 419L951 421L949 417L941 418L940 415L925 410L921 404L921 398L925 390L930 388L931 382Z"
+          },
+          "to": "ship",
+          "next": true,
+          "shortcut": false,
+          "film": {
+            "src": "films/jellies-jelly.mp4",
+            "src720": "films/jellies-jelly-720.mp4",
+            "seconds": 11.542
+          },
+          "rewind": {
+            "src": "films/jellies-jelly-rewind.mp4",
+            "src720": "films/jellies-jelly-rewind-720.mp4",
+            "seconds": 11.542
+          }
+        }
+      ]
+    },
+    {
+      "id": "ship",
+      "title": "The Ghost Ship",
+      "chapter": "Stop thirteen",
+      "caption": "It never sank.",
+      "still": "stills/ship.jpg",
+      "loop": {
+        "src": "films/ship-loop.mp4",
+        "src720": "films/ship-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-ship.mp3",
+        "lines": [
+          {
+            "text": "The sketchbook was up there. Coffee ring on the cover. I knew it from the ground.",
+            "start": 0,
+            "end": 5.27
+          },
+          {
+            "text": "The white thing went up the rigging before I could say anything.",
+            "start": 5.88,
+            "end": 9.04
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "sails",
+          "label": "Climb into the sails",
+          "hint": "The sketchbook is up there",
+          "at": [
+            0.53,
+            0.55
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M861 449L864 450L865 455L869 455L871 451L879 453L883 463L881 467L882 474L892 472L893 468L898 466L903 469L913 467L916 470L920 487L903 487L900 489L900 492L904 495L921 493L924 496L925 502L921 511L903 511L902 514L911 517L931 517L939 523L939 527L933 534L932 555L952 566L958 567L958 565L963 564L966 572L975 577L971 579L971 583L974 586L974 594L971 595L969 600L959 607L950 609L950 612L946 614L947 618L946 616L935 614L916 620L915 623L910 616L901 619L874 617L872 615L865 616L863 613L858 613L856 608L853 609L853 612L850 612L848 609L849 605L834 605L831 608L831 612L836 615L800 615L796 613L790 616L789 624L774 624L770 622L767 625L748 624L730 627L717 627L719 625L718 622L712 624L711 616L714 614L708 613L700 590L686 577L687 572L693 572L689 568L694 568L695 565L710 564L711 562L719 563L720 561L737 561L739 563L744 556L752 561L757 561L765 552L763 540L760 536L756 536L756 534L760 534L763 522L789 514L787 510L780 511L770 506L771 493L786 489L804 489L808 483L820 482L822 479L826 479L828 482L834 480L842 481L842 479L849 476L854 480L858 479L858 475L853 472L849 472L846 475L840 473L838 476L831 476L823 475L821 472L813 473L807 468L802 471L793 469L789 471L792 476L809 476L804 481L795 479L789 484L774 484L772 470L775 466L804 466L810 462L813 455L817 457L819 462L820 454L824 450L827 452L828 457L846 456L848 459L853 459L855 455L859 455Z"
+          },
+          "to": "wave",
+          "next": true,
+          "shortcut": false,
+          "film": {
+            "src": "films/ship-sails.mp4",
+            "src720": "films/ship-sails-720.mp4",
+            "seconds": 12.25
+          },
+          "rewind": {
+            "src": "films/ship-sails-rewind.mp4",
+            "src720": "films/ship-sails-rewind-720.mp4",
+            "seconds": 12.25
+          }
+        }
+      ]
+    },
+    {
+      "id": "wave",
+      "title": "The Wave",
+      "chapter": "Last stop",
+      "caption": "That's it. That's the story.",
+      "still": "stills/wave.jpg",
+      "loop": {
+        "src": "films/wave-loop.mp4",
+        "src720": "films/wave-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-wave.mp3",
+        "lines": [
+          {
+            "text": "I woke up on the last train. No sketchbook. The white thing was asleep on the seat next to me.",
+            "start": 0,
+            "end": 7.8
+          },
+          {
+            "text": "I'd drawn it. In the margins, in 1998, maybe '99. I don't know how I forgot.",
+            "start": 8.28,
+            "end": 14.14
+          },
+          {
+            "text": "I bought a pen at the kiosk on the way out. That's it. That's the story.",
+            "start": 14.71,
+            "end": 19.45
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "water",
+          "label": "Touch the water",
+          "hint": "Gently",
+          "at": [
+            0.5,
+            0.85
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M1286 426L1290 426L1292 429L1299 428L1300 431L1314 436L1318 433L1323 434L1325 437L1340 436L1350 445L1359 443L1359 445L1366 446L1366 450L1374 452L1375 455L1398 461L1418 461L1421 465L1425 461L1450 463L1454 460L1466 460L1468 457L1473 456L1476 459L1482 460L1492 458L1497 461L1495 466L1499 467L1492 474L1494 478L1485 480L1479 477L1479 473L1484 472L1481 469L1463 473L1459 467L1451 475L1458 479L1462 475L1470 475L1471 478L1466 481L1475 482L1477 485L1491 484L1495 486L1493 492L1491 492L1493 493L1493 503L1489 504L1494 508L1482 507L1481 511L1483 512L1494 512L1497 515L1501 510L1519 513L1529 508L1531 512L1536 513L1530 519L1517 516L1515 521L1505 521L1502 517L1498 521L1495 521L1493 518L1483 518L1482 515L1478 514L1479 507L1482 504L1477 502L1477 498L1487 497L1486 494L1483 494L1482 491L1477 491L1476 486L1474 486L1472 491L1467 491L1464 488L1458 491L1453 488L1452 491L1455 491L1455 493L1449 497L1438 492L1431 494L1430 492L1436 486L1444 484L1439 482L1439 480L1435 480L1431 485L1424 485L1420 489L1422 493L1410 495L1413 497L1425 497L1427 495L1429 498L1440 500L1454 501L1460 499L1471 501L1470 505L1445 503L1439 508L1451 507L1463 510L1462 514L1492 524L1494 527L1507 527L1511 524L1517 527L1521 525L1527 527L1536 525L1536 878L0 878L0 467L5 466L6 461L16 460L19 456L37 454L38 452L48 454L50 451L69 447L81 440L89 442L92 439L113 437L115 434L117 437L135 436L140 440L153 441L156 444L161 444L163 447L168 447L182 453L190 452L202 455L204 460L217 462L220 466L239 467L245 472L291 473L295 476L295 481L293 482L292 489L290 489L289 497L291 499L289 499L289 508L282 510L288 513L282 516L282 518L291 529L283 534L286 538L283 541L284 548L288 552L285 553L281 566L285 574L296 574L297 582L302 583L301 588L318 589L320 594L331 592L332 594L344 595L347 598L358 600L374 598L376 600L370 601L371 603L384 604L391 608L413 606L447 609L451 606L458 609L468 605L476 609L484 608L486 612L497 612L503 617L506 617L507 614L512 614L514 618L517 615L521 615L522 618L518 619L516 623L511 622L510 619L508 620L509 626L516 626L513 630L517 631L518 634L523 634L532 627L537 631L538 635L544 635L537 637L532 632L529 632L523 638L523 645L533 649L549 647L550 651L562 652L564 651L561 649L562 647L574 647L578 642L580 642L581 646L586 646L588 642L587 635L592 635L592 640L597 639L597 635L600 633L598 626L603 625L607 627L604 623L610 621L610 619L615 622L619 621L615 616L610 616L609 613L604 612L607 608L603 607L602 603L606 601L604 601L604 595L600 594L599 590L606 592L609 588L623 588L625 586L629 589L637 590L643 587L646 579L660 578L659 574L677 573L686 575L686 573L694 572L691 568L695 567L704 568L699 570L698 573L716 573L719 567L725 566L718 561L715 564L709 563L716 560L712 556L717 554L717 552L709 552L697 561L686 555L675 560L658 557L669 548L674 549L675 554L682 555L683 552L679 551L680 549L692 548L686 546L689 542L695 544L704 543L710 541L710 537L723 538L720 540L721 542L728 539L728 536L722 532L724 526L716 524L714 527L709 527L699 519L707 519L708 516L713 515L722 521L742 521L743 523L739 526L745 528L758 523L754 520L754 512L759 513L761 516L761 513L765 511L761 507L769 506L773 500L780 500L782 503L781 509L775 510L770 506L766 510L768 515L772 516L774 512L779 512L779 515L773 517L783 521L783 519L790 518L798 512L800 513L798 517L803 517L804 525L808 525L808 527L805 527L805 530L814 530L823 538L816 541L820 545L806 545L804 549L822 549L827 554L822 555L820 558L815 558L811 556L810 551L805 551L801 558L793 560L806 562L813 560L824 561L825 566L817 571L822 575L817 577L819 582L816 582L816 584L827 588L828 591L837 589L843 592L842 594L833 592L826 594L825 597L841 598L842 600L839 603L848 604L852 607L857 607L855 602L859 598L865 597L866 594L869 598L888 598L888 605L892 607L891 610L875 605L864 610L864 615L868 617L870 623L878 625L881 622L885 622L889 626L888 636L881 639L890 642L893 651L895 651L896 648L905 647L908 642L916 641L917 637L922 636L919 630L917 630L918 614L928 607L934 607L936 610L939 600L949 596L945 592L948 592L950 588L954 588L958 592L960 583L964 582L964 580L959 578L962 575L961 571L969 571L966 571L965 568L960 568L960 570L955 572L951 572L951 570L958 567L961 563L970 561L972 558L981 561L989 570L987 574L983 574L985 577L984 581L990 580L993 583L992 587L999 589L999 594L1006 590L1011 593L1010 596L1017 596L1020 592L1015 589L1022 587L1026 590L1026 593L1028 590L1034 589L1038 590L1042 597L1055 597L1057 594L1060 594L1061 597L1065 598L1068 595L1063 593L1063 591L1072 589L1075 595L1082 595L1078 600L1086 599L1085 603L1087 600L1099 598L1100 595L1103 595L1104 598L1109 598L1110 594L1119 594L1123 595L1123 599L1126 601L1124 605L1125 610L1129 610L1131 613L1144 612L1139 607L1148 607L1148 611L1150 611L1150 605L1161 603L1161 601L1157 600L1158 598L1173 598L1175 593L1187 594L1189 592L1185 591L1185 589L1196 589L1202 586L1206 588L1220 587L1217 583L1223 582L1224 577L1218 571L1218 565L1234 558L1233 541L1239 539L1238 525L1242 521L1251 520L1246 517L1244 519L1238 518L1239 515L1242 515L1238 504L1242 502L1243 497L1243 494L1239 493L1243 490L1241 482L1239 482L1239 479L1242 477L1238 475L1241 471L1239 470L1241 466L1240 459L1237 454L1228 457L1223 455L1222 452L1224 450L1237 452L1238 443L1245 438L1248 440L1259 439L1260 441L1267 438L1269 441L1264 442L1266 446L1277 438L1284 441L1287 435L1295 435L1289 433L1285 429Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/wave-water.mp4",
+            "src720": "films/wave-water-720.mp4",
+            "seconds": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "rift",
+      "title": "The Rift",
+      "still": "stills/rift.jpg",
+      "loop": null,
+      "narration": null,
+      "ending": {
+        "kind": "death",
+        "title": "Double or nothing",
+        "text": "You bet it all. They kept it all."
+      },
+      "hotspots": []
+    },
+    {
+      "id": "watching",
+      "title": "Observe",
+      "still": "stills/watching.jpg",
+      "loop": null,
+      "narration": null,
+      "ending": {
+        "kind": "death",
+        "title": "You kept watching",
+        "text": "It was fine. That's the problem."
+      },
+      "hotspots": []
+    }
+  ]
+}
